@@ -7,8 +7,7 @@ from torch.utils.data import Dataset
 from torchvision import transforms
 IMAGE_PATH = 'E:/00_Projects_Station/dataset/CUB-200-2011'
 SPLIT_PATH = 'E:/00_Projects_Station/dataset/CUB-200-2011/split'
-DEPTH_PATH = 'E:/00_Projects_Station/dataset/CUB-200-2011-depth'
-Attention_PATH = 'E:/00_Projects_Station/dataset/CUB-200-2011-attention'
+
 
 class CUB(Dataset):
 
