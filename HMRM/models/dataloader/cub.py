@@ -12,10 +12,7 @@ SPLIT_PATH = 'E:/00_Projects_Station/dataset/CUB-200-2011/split'
 class CUB(Dataset):
 
     def __init__(self, setname, args=None, return_path=False):
-        #if args.sod == 1:
-        IMAGE_PATH = Attention_PATH
-        #else:
-        #IMAGE_PATH = os.path.join(args.data_dir, 'cub/')
+
         SPLIT_PATH = os.path.join(args.data_dir, 'cub/split/')
         txt_path = osp.join(SPLIT_PATH, setname + '.csv')
         lines = [x.strip() for x in open(txt_path, 'r').readlines()][1:]
